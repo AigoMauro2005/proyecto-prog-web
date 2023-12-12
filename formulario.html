@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <center>
+            <a href="../index.html"> </a>
+        </center>
+    </header>
+    <style>
+        .navbar {
+            background-color: black;
+            overflow: hidden;
+        }
+    
+        .navbar a {
+        float: left;
+        display: block;
+        color: beige;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin: 5px;
+        border-radius: 50px;
+        transition: padding 0.3s; 
+    }
+
+        .navbar a:hover {
+        padding: 14px 20px; 
+            background-color: lightgreen ;
+            color: black;
+        }
+    </style>
+    <div class="navbar">
+        <a href="index.html">Tienda</a>
+    </div>
+    <section>
+        <article>
+            <!-- form -->
+            <form action="">
+                <div>
+                    <fieldset>
+                        <legend><h2>Registrarse para obtener informacion!</h2></legend>
+                    <label for="name">Nombre</label><br>
+                    <input type="text" id="name"><br>
+                    <label for="email">Correo Electronico</label><br>
+                    <input type="text" id="email"><br>
+                    <label for="contr">Contraseña</label><br>
+                    <input type="password" name="contraseña" id="contr"><br>
+                    <label for="Provincia"> Seleccione una provincia</label> <br>
+                    <select name="Provincia" id="Provincia">
+                    <option>Seleccione una opcion</option>
+                    <option value="Neuquen">Argentina</option>
+                    <option value="Rio Negro"></option>
+                    <option value="Martin de los Andes">Uruguay</option>
+                    </select> <br>
+                    <label>Desea rebir notificaciones?</label> <br>
+                    <input type="radio" name="not" value="Si" id="nota" checked >
+                    <label for="nota">Si</label> <br>
+                    <input type="radio" name="not" value="No" id="nota" checked >
+                    <label for="nota">No</label> <br>
+                    <div>
+                        <label for="opinion">Deje su opinion </label>
+                    </div>
+                    <textarea name="" id="opinion" cols="30" rows="10"></textarea>
+                    <div>
+                        <input type="reset" name="reset" value="Borrar los datos">
+                        <input type="submit" name="enviar">
+                    </div>
+                    </fieldset>
+                </div>
+            </form>
+        </article> 
+
+</body>
+</html>
